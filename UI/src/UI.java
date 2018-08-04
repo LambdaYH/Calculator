@@ -34,7 +34,7 @@ public class UI {
     private JButton tanButton;
     private JButton button_bfz;
     private JButton eButton;
-    private JButton πButton;
+    private JButton PButton;
     private JTextField tf1;
     private int point_flag=0;//小数点标志位
     private int Xcode =1;//小数点用
@@ -48,7 +48,7 @@ public class UI {
     private boolean iseqsig=false;
     private String sm="";
     private String zt="";
-    public UI() {
+    public  UI() {
         num_1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -438,7 +438,7 @@ public class UI {
                         point_flag = 0;
                         Rua.num[mode_flag]= (Rua.num[mode_flag]-Rua.num[mode_flag]%10)/10;
                     }else {
-                        Rua.num[mode_flag]=Rua.num[mode_flag]-1;
+                        //暂时不会
                     }
                 }
                 if(Rua.num[mode_flag]==0){
