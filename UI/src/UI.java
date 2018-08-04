@@ -48,7 +48,7 @@ public class UI {
     private boolean iseqsig=false;
     private String sm="";
     private String zt="";
-    public  UI() {
+    UI() {
         num_1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
