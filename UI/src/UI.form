@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="UI">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="5">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="256" width="1222" height="543"/>
+    </constraints>
+    <properties>
+      <enabled value="true"/>
+      <font name="Microsoft YaHei" size="16" style="1"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="4955b" layout-manager="GridLayoutManager" row-count="5" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="10" vgap="8">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="true"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="589e0" class="javax.swing.JButton" binding="num_point">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft YaHei" size="16" style="1"/>
+              <text value="."/>
+            </properties>
+          </component>
+          <component id="47ccf" class="javax.swing.JButton" binding="num_0">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft YaHei" size="16" style="1"/>
+              <text value="0"/>
+            </properties>
+          </component>
+          <component id="d19c1" class="javax.swing.JButton" binding="num_7">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft YaHei" size="16" style="1"/>
+              <text value="7"/>
+            </properties>
+          </component>
+          <component id="889ea" class="javax.swing.JButton" binding="num_5">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft YaHei" size="16" style="1"/>
+              <text value="5"/>
+            </properties>
+          </component>
+          <component id="2b810" class="javax.swing.JButton" binding="num_8">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft YaHei" size="16" style="1"/>
+              <text value="8"/>
+            </properties>
+          </component>
+          <component id="fa976" class="javax.swing.JButton" binding="num_4">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft YaHei" size="16" style="1"/>
+              <text value="4"/>
+            </properties>
+          </component>
+          <component id="a24da" class="javax.swing.JButton" binding="num_6">
+            <constraints>
+              <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft YaHei" size="16" style="1"/>
+              <text value="6"/>
+            </properties>
+          </component>
+          <component id="90b11" class="javax.swing.JButton" binding="num_9">
+            <constraints>
+              <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft YaHei" size="16" style="1"/>
+              <text value="9"/>
+            </properties>
+          </component>
+          <component id="a89da" class="javax.swing.JButton" binding="num_eq">
+            <constraints>
+              <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft YaHei" size="16" style="1"/>
+              <text value="="/>
+            </properties>
+          </component>
+          <component id="ad2ef" class="javax.swing.JButton" binding="num_1">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft YaHei" size="16" style="1"/>
+              <text value="1"/>
+            </properties>
+          </component>
+          <component id="acac9" class="javax.swing.JButton" binding="num_2">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft YaHei" size="16" style="1"/>
+              <text value="2"/>
+            </properties>
+          </component>
+          <component id="c502d" class="javax.swing.JButton" binding="num_3">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft YaHei" size="16" style="1"/>
+              <text value="3"/>
+            </properties>
+          </component>
+          <component id="bc998" class="javax.swing.JButton" binding="tgButton">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft YaHei" size="16" style="1"/>
+              <text value="退格"/>
+            </properties>
+          </component>
+          <component id="4bd9a" class="javax.swing.JButton" binding="plu">
+            <constraints>
+              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft YaHei" size="16" style="1"/>
+              <text value="+"/>
+            </properties>
+          </component>
+          <component id="59621" class="javax.swing.JButton" binding="sub">
+            <constraints>
+              <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft YaHei" size="16" style="1"/>
+              <text value="-"/>
+            </properties>
+          </component>
+          <component id="8062b" class="javax.swing.JButton" binding="mul">
+            <constraints>
+              <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Anonymous Pro" size="16" style="0"/>
+              <text value="×"/>
+            </properties>
+          </component>
+          <component id="e7a8d" class="javax.swing.JButton" binding="dec">
+            <constraints>
+              <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft YaHei" size="16" style="1"/>
+              <text value="÷"/>
+            </properties>
+          </component>
+          <component id="c5b48" class="javax.swing.JButton" binding="cButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft YaHei" size="16" style="1"/>
+              <text value="C"/>
+            </properties>
+          </component>
+          <component id="fbca0" class="javax.swing.JButton" binding="daoshu">
+            <constraints>
+              <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft YaHei" size="16" style="1"/>
+              <text value="1/x"/>
+            </properties>
+          </component>
+          <component id="95633" class="javax.swing.JButton" binding="squ">
+            <constraints>
+              <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft YaHei" size="16" style="1"/>
+              <text value="x²"/>
+            </properties>
+          </component>
+          <component id="8de7c" class="javax.swing.JButton" binding="sqr">
+            <constraints>
+              <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft YaHei" size="16" style="1"/>
+              <text value="√"/>
+            </properties>
+          </component>
+          <component id="e04ea" class="javax.swing.JButton" binding="zf">
+            <constraints>
+              <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft YaHei" size="16" style="1"/>
+              <text value="±"/>
+            </properties>
+          </component>
+          <component id="3aad2" class="javax.swing.JButton" binding="logButton" default-binding="true">
+            <constraints>
+              <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft YaHei" size="16" style="1"/>
+              <text value="log"/>
+            </properties>
+          </component>
+          <component id="2ce55" class="javax.swing.JButton" binding="lnButton" default-binding="true">
+            <constraints>
+              <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft YaHei" size="16" style="1"/>
+              <text value="ln"/>
+            </properties>
+          </component>
+          <component id="acf10" class="javax.swing.JButton" binding="sinButton" default-binding="true">
+            <constraints>
+              <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft YaHei" size="16" style="1"/>
+              <text value="sin"/>
+            </properties>
+          </component>
+          <component id="aacaa" class="javax.swing.JButton" binding="cosButton" default-binding="true">
+            <constraints>
+              <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft YaHei" size="16" style="1"/>
+              <text value="cos"/>
+            </properties>
+          </component>
+          <component id="cf0ae" class="javax.swing.JButton" binding="tanButton" default-binding="true">
+            <constraints>
+              <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft YaHei" size="16" style="1"/>
+              <text value="tan"/>
+            </properties>
+          </component>
+          <component id="3b8a5" class="javax.swing.JTextField" binding="tf2">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1"/>
+              <columns value="70"/>
+              <editable value="false"/>
+              <font name="Microsoft YaHei" size="16" style="1"/>
+              <foreground color="-16777216"/>
+              <horizontalAlignment value="4"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="75462" class="javax.swing.JButton" binding="button_bfz">
+            <constraints>
+              <grid row="4" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft YaHei" size="16" style="1"/>
+              <text value="％"/>
+            </properties>
+          </component>
+          <component id="ee307" class="javax.swing.JButton" binding="eButton" default-binding="true">
+            <constraints>
+              <grid row="2" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft YaHei" size="16" style="1"/>
+              <text value="e"/>
+            </properties>
+          </component>
+          <component id="b393a" class="javax.swing.JButton" binding="πButton" default-binding="true">
+            <constraints>
+              <grid row="3" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft YaHei" size="16" style="1"/>
+              <text value="π"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="6af1b" class="javax.swing.JTextField" binding="tf1">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-1"/>
+          <columns value="100"/>
+          <editable value="false"/>
+          <font size="36"/>
+          <horizontalAlignment value="4"/>
+          <text value=""/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+  <inspectionSuppressions>
+    <suppress inspection="NoLabelFor" id="ad04f"/>
+  </inspectionSuppressions>
+</form>
