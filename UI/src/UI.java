@@ -62,12 +62,7 @@ public class UI {
             }
 
             s = Double.toString(Rua.num[mode_flag]);
-            if (s.indexOf(".") > 0) {
-                s = s.replaceAll("0+?$", "");
-                s = s.replaceAll("[.]$", "");
-            }
-
-
+            antis();
             tf1.setText(tf1s + s);
         });
         num_2.addActionListener(e -> {
@@ -83,10 +78,7 @@ public class UI {
                 Rua.num[mode_flag] = (double) Math.round(Rua.num[mode_flag] * Math.pow(10, Xcode - 1)) / Math.pow(10, Xcode - 1);
             }
             s = Double.toString(Rua.num[mode_flag]);
-            if (s.indexOf(".") > 0) {
-                s = s.replaceAll("0+?$", "");
-                s = s.replaceAll("[.]$", "");
-            }
+            antis();
             tf1.setText(tf1s + s);
         });
         num_3.addActionListener(e -> {
@@ -102,10 +94,7 @@ public class UI {
                 Rua.num[mode_flag] = (double) Math.round(Rua.num[mode_flag] * Math.pow(10, Xcode - 1)) / Math.pow(10, Xcode - 1);
             }
             s = Double.toString(Rua.num[mode_flag]);
-            if (s.indexOf(".") > 0) {
-                s = s.replaceAll("0+?$", "");
-                s = s.replaceAll("[.]$", "");
-            }
+            antis();
             tf1.setText(tf1s + s);
         });
         num_4.addActionListener(e -> {
@@ -121,10 +110,7 @@ public class UI {
                 Rua.num[mode_flag] = (double) Math.round(Rua.num[mode_flag] * Math.pow(10, Xcode - 1)) / Math.pow(10, Xcode - 1);
             }
             s = Double.toString(Rua.num[mode_flag]);
-            if (s.indexOf(".") > 0) {
-                s = s.replaceAll("0+?$", "");
-                s = s.replaceAll("[.]$", "");
-            }
+            antis();
             tf1.setText(tf1s + s);
         });
         num_5.addActionListener(e -> {
@@ -140,10 +126,7 @@ public class UI {
                 Rua.num[mode_flag] = (double) Math.round(Rua.num[mode_flag] * Math.pow(10, Xcode - 1)) / Math.pow(10, Xcode - 1);
             }
             s = Double.toString(Rua.num[mode_flag]);
-            if (s.indexOf(".") > 0) {
-                s = s.replaceAll("0+?$", "");
-                s = s.replaceAll("[.]$", "");
-            }
+            antis();
             tf1.setText(tf1s + s);
         });
         num_6.addActionListener(e -> {
@@ -159,10 +142,7 @@ public class UI {
                 Rua.num[mode_flag] = (double) Math.round(Rua.num[mode_flag] * Math.pow(10, Xcode - 1)) / Math.pow(10, Xcode - 1);
             }
             s = Double.toString(Rua.num[mode_flag]);
-            if (s.indexOf(".") > 0) {
-                s = s.replaceAll("0+?$", "");
-                s = s.replaceAll("[.]$", "");
-            }
+            antis();
             tf1.setText(tf1s + s);
         });
         num_7.addActionListener(e -> {
@@ -178,10 +158,7 @@ public class UI {
                 Rua.num[mode_flag] = (double) Math.round(Rua.num[mode_flag] * Math.pow(10, Xcode - 1)) / Math.pow(10, Xcode - 1);
             }
             s = Double.toString(Rua.num[mode_flag]);
-            if (s.indexOf(".") > 0) {
-                s = s.replaceAll("0+?$", "");
-                s = s.replaceAll("[.]$", "");
-            }
+            antis();
             tf1.setText(tf1s + s);
         });
         num_8.addActionListener(e -> {
@@ -197,10 +174,7 @@ public class UI {
                 Rua.num[mode_flag] = (double) Math.round(Rua.num[mode_flag] * Math.pow(10, Xcode - 1)) / Math.pow(10, Xcode - 1);
             }
             s = Double.toString(Rua.num[mode_flag]);
-            if (s.indexOf(".") > 0) {
-                s = s.replaceAll("0+?$", "");
-                s = s.replaceAll("[.]$", "");
-            }
+            antis();
             tf1.setText(tf1s + s);
 
         });
@@ -217,10 +191,7 @@ public class UI {
                 Rua.num[mode_flag] = (double) Math.round(Rua.num[mode_flag] * Math.pow(10, Xcode - 1)) / Math.pow(10, Xcode - 1);
             }
             s = Double.toString(Rua.num[mode_flag]);
-            if (s.indexOf(".") > 0) {
-                s = s.replaceAll("0+?$", "");
-                s = s.replaceAll("[.]$", "");
-            }
+            antis();
             tf1.setText(tf1s + s);
 
         });
@@ -240,10 +211,7 @@ public class UI {
                 Rua.num[mode_flag] = (double) Math.round(Rua.num[mode_flag] * Math.pow(10, Xcode - 1)) / Math.pow(10, Xcode - 1);
             }
             s = Double.toString(Rua.num[mode_flag]);
-            if (s.indexOf(".") > 0) {
-                s = s.replaceAll("0+?$", "");
-                s = s.replaceAll("[.]$", "");
-            }
+            antis();
             s = s.concat(zt);
             tf1.setText(tf1s + s);
 
@@ -375,6 +343,7 @@ public class UI {
             if (launch_sig == 0) {
                 cal_mode = 0;
                 launch_sig = 1;
+                Rua.result_temp=Rua.num[mode_flag];
             }
             c1.go(cal_mode);
             tf1s = tf1.getText() + "=";
@@ -407,21 +376,69 @@ public class UI {
                 cal_mode = cal_mode_temp;
             }
             s = Double.toString(Rua.num[mode_flag]);
-            if (s.indexOf(".") > 0) {
-                s = s.replaceAll("0+?$", "");
-                s = s.replaceAll("[.]$", "");
-            }
+            antis();
             tf1.setText(tf1s + s);
         });
         daoshu.addActionListener(e -> {
-                String s_temp=Double.toString(Rua.num[mode_flag]);
+            String s_temp = Double.toString(Rua.num[mode_flag]);
             if (s_temp.indexOf(".") > 0) {
                 s_temp = s_temp.replaceAll("0+?$", "");
                 s_temp = s_temp.replaceAll("[.]$", "");
             }
-            s="1/"+s_temp;
-            Rua.num[mode_flag]=1/Rua.num[mode_flag];
-            tf1.setText(tf1s+s);                        //暂时只支持输入数字后倒数
+            s = "1/" + s_temp;
+            Rua.num[mode_flag] = 1 / Rua.num[mode_flag];
+            tf1.setText(tf1s + s);                        //暂时只支持输入数字后倒数
+        });
+        squ.addActionListener(e -> {
+            String s_temp = Double.toString(Rua.num[mode_flag]);
+            if (s_temp.indexOf(".") > 0) {
+                s_temp = s_temp.replaceAll("0+?$", "");
+                s_temp = s_temp.replaceAll("[.]$", "");
+            }
+            s = s_temp + "²";
+            Rua.num[mode_flag]*=Rua.num[mode_flag];
+            tf1.setText(tf1s + s);
+        });
+        sqr.addActionListener(e -> {
+            String s_temp = Double.toString(Rua.num[mode_flag]);
+            if (s_temp.indexOf(".") > 0) {
+                s_temp = s_temp.replaceAll("0+?$", "");
+                s_temp = s_temp.replaceAll("[.]$", "");
+            }
+            s = "√"+s_temp;
+            Rua.num[mode_flag]=Math.sqrt(Rua.num[mode_flag]);
+            tf1.setText(tf1s + s);
+        });
+        zf.addActionListener(e -> {
+            String s_temp = Double.toString(Rua.num[mode_flag]);
+            if (s_temp.indexOf(".") > 0) {
+                s_temp = s_temp.replaceAll("0+?$", "");
+                s_temp = s_temp.replaceAll("[.]$", "");
+            }
+            s = "-"+s_temp;
+            Rua.num[mode_flag]=-Rua.num[mode_flag];
+            tf1.setText(tf1s + s);
+        });
+
+        logButton.addActionListener(e -> {
+            String s_temp = Double.toString(Rua.num[mode_flag]);
+            if (s_temp.indexOf(".") > 0) {
+                s_temp = s_temp.replaceAll("0+?$", "");
+                s_temp = s_temp.replaceAll("[.]$", "");
+            }
+            s = "lg"+s_temp;
+            Rua.num[mode_flag]=Math.log10(Rua.num[mode_flag]);
+            tf1.setText(tf1s + s);
+        });
+        lnButton.addActionListener(e -> {
+            String s_temp = Double.toString(Rua.num[mode_flag]);
+            if (s_temp.indexOf(".") > 0) {
+                s_temp = s_temp.replaceAll("0+?$", "");
+                s_temp = s_temp.replaceAll("[.]$", "");
+            }
+            s = "ln"+s_temp;
+            Rua.num[mode_flag]=Math.log(Rua.num[mode_flag]);
+            tf1.setText(tf1s + s);
         });
     }
     private void clear(){
@@ -434,6 +451,12 @@ public class UI {
         Xcode=1;
         iseqsig=false;
         zt="";
+    }
+    private void antis(){
+        if (s.indexOf(".") > 0) {
+            s = s.replaceAll("0+?$", "");
+            s = s.replaceAll("[.]$", "");
+        }
     }
 
 }

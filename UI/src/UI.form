@@ -223,7 +223,7 @@
             </constraints>
             <properties>
               <font name="Microsoft YaHei" size="16" style="1"/>
-              <text value="log"/>
+              <text value="lg"/>
             </properties>
           </component>
           <component id="2ce55" class="javax.swing.JButton" binding="lnButton" default-binding="true">
