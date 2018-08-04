@@ -49,408 +49,354 @@ public class UI {
     private String sm="";
     private String zt="";
     UI() {
-        num_1.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if(iseqsig){
-                    tf1s="";
-                    clear();
-                }
-                if(point_flag==0){
-                    Rua.num[mode_flag]=Rua.num[mode_flag]*10+1;
-                }else{
-                    Rua.num[mode_flag]=Rua.num[mode_flag]+1*Math.pow(0.1, Xcode++);
-                    Rua.num[mode_flag]=(double)Math.round(Rua.num[mode_flag]*Math.pow(10,Xcode-1))/Math.pow(10,Xcode-1);
-                }
-
-                s=Double.toString(Rua.num[mode_flag]);
-                if(s.indexOf(".") > 0){
-                    s = s.replaceAll("0+?$", "");
-                    s = s.replaceAll("[.]$", "");
-                }
-
-
-                tf1.setText(tf1s+s);
-            }
-        });
-        num_2.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if(iseqsig){
-                    tf1s="";
-                    clear();
-                    iseqsig=false;
-                }
-                if(point_flag==0){
-                    Rua.num[mode_flag]=Rua.num[mode_flag]*10+2;
-                }else{
-                    Rua.num[mode_flag]=Rua.num[mode_flag]+2*Math.pow(0.1, Xcode++);
-                    Rua.num[mode_flag]=(double)Math.round(Rua.num[mode_flag]*Math.pow(10,Xcode-1))/Math.pow(10,Xcode-1);
-                }
-                s=Double.toString(Rua.num[mode_flag]);
-                if(s.indexOf(".") > 0){
-                    s = s.replaceAll("0+?$", "");
-                    s = s.replaceAll("[.]$", "");
-                }
-                tf1.setText(tf1s+s);
-            }
-        });
-        num_3.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if(iseqsig){
-                    tf1s="";
-                    clear();
-                    iseqsig=false;
-                }
-                if(point_flag==0){
-                    Rua.num[mode_flag]=Rua.num[mode_flag]*10+3;
-                }else{
-                    Rua.num[mode_flag]=Rua.num[mode_flag]+3*Math.pow(0.1, Xcode++);
-                    Rua.num[mode_flag]=(double)Math.round(Rua.num[mode_flag]*Math.pow(10,Xcode-1))/Math.pow(10,Xcode-1);
-                }
-                s=Double.toString(Rua.num[mode_flag]);
-                if(s.indexOf(".") > 0){
-                    s = s.replaceAll("0+?$", "");
-                    s = s.replaceAll("[.]$", "");
-                }
-                tf1.setText(tf1s+s);
-            }
-        });
-        num_4.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if(iseqsig){
-                    tf1s="";
-                    clear();
-                    iseqsig=false;
-                }
-                if(point_flag==0){
-                    Rua.num[mode_flag]=Rua.num[mode_flag]*10+4;
-                }else{
-                    Rua.num[mode_flag]=Rua.num[mode_flag]+4*Math.pow(0.1, Xcode++);
-                    Rua.num[mode_flag]=(double)Math.round(Rua.num[mode_flag]*Math.pow(10,Xcode-1))/Math.pow(10,Xcode-1);
-                }
-                s=Double.toString(Rua.num[mode_flag]);
-                if(s.indexOf(".") > 0){
-                    s = s.replaceAll("0+?$", "");
-                    s = s.replaceAll("[.]$", "");
-                }
-                tf1.setText(tf1s+s);
-            }
-        });
-        num_5.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if(iseqsig){
-                    tf1s="";
-                    clear();
-                    iseqsig=false;
-                }
-                if(point_flag==0){
-                    Rua.num[mode_flag]=Rua.num[mode_flag]*10+5;
-                }else{
-                    Rua.num[mode_flag]=Rua.num[mode_flag]+5*Math.pow(0.1, Xcode++);
-                    Rua.num[mode_flag]=(double)Math.round(Rua.num[mode_flag]*Math.pow(10,Xcode-1))/Math.pow(10,Xcode-1);
-                }
-                s=Double.toString(Rua.num[mode_flag]);
-                if(s.indexOf(".") > 0){
-                    s = s.replaceAll("0+?$", "");
-                    s = s.replaceAll("[.]$", "");
-                }
-                tf1.setText(tf1s+s);
-            }
-        });
-        num_6.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if(iseqsig){
-                    tf1s="";
-                    clear();
-                    iseqsig=false;
-                }
-                if(point_flag==0){
-                    Rua.num[mode_flag]=Rua.num[mode_flag]*10+6;
-                }else{
-                    Rua.num[mode_flag]=Rua.num[mode_flag]+6*Math.pow(0.1, Xcode++);
-                    Rua.num[mode_flag]=(double)Math.round(Rua.num[mode_flag]*Math.pow(10,Xcode-1))/Math.pow(10,Xcode-1);
-                }
-                s=Double.toString(Rua.num[mode_flag]);
-                if(s.indexOf(".") > 0){
-                    s = s.replaceAll("0+?$", "");
-                    s = s.replaceAll("[.]$", "");
-                }
-                tf1.setText(tf1s+s);
-            }
-        });
-        num_7.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if(iseqsig){
-                    tf1s="";
-                    clear();
-                    iseqsig=false;
-                }
-                if(point_flag==0){
-                    Rua.num[mode_flag]=Rua.num[mode_flag]*10+7;
-                }else{
-                    Rua.num[mode_flag]=Rua.num[mode_flag]+7*Math.pow(0.1, Xcode++);
-                    Rua.num[mode_flag]=(double)Math.round(Rua.num[mode_flag]*Math.pow(10,Xcode-1))/Math.pow(10,Xcode-1);
-                }
-                s=Double.toString(Rua.num[mode_flag]);
-                if(s.indexOf(".") > 0){
-                    s = s.replaceAll("0+?$", "");
-                    s = s.replaceAll("[.]$", "");
-                }
-                tf1.setText(tf1s+s);
-            }
-        });
-        num_8.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if(iseqsig){
-                    tf1s="";
-                    clear();
-                    iseqsig=false;
-                }
-                if(point_flag==0){
-                    Rua.num[mode_flag]=Rua.num[mode_flag]*10+8;
-                }else{
-                    Rua.num[mode_flag]=Rua.num[mode_flag]+8*Math.pow(0.1, Xcode++);
-                    Rua.num[mode_flag]=(double)Math.round(Rua.num[mode_flag]*Math.pow(10,Xcode-1))/Math.pow(10,Xcode-1);
-                }
-                s=Double.toString(Rua.num[mode_flag]);
-                if(s.indexOf(".") > 0){
-                    s = s.replaceAll("0+?$", "");
-                    s = s.replaceAll("[.]$", "");
-                }
-                tf1.setText(tf1s+s);
-             
-            }
-        });
-        num_9.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if(iseqsig){
-                    tf1s="";
-                    clear();
-                    iseqsig=false;
-                }
-                if(point_flag==0){
-                    Rua.num[mode_flag]=Rua.num[mode_flag]*10+9;
-                }else{
-                    Rua.num[mode_flag]=Rua.num[mode_flag]+9*Math.pow(0.1, Xcode++);
-                    Rua.num[mode_flag]=(double)Math.round(Rua.num[mode_flag]*Math.pow(10,Xcode-1))/Math.pow(10,Xcode-1);
-                }
-                s=Double.toString(Rua.num[mode_flag]);
-                if(s.indexOf(".") > 0){
-                    s = s.replaceAll("0+?$", "");
-                    s = s.replaceAll("[.]$", "");
-                }
-                tf1.setText(tf1s+s);
-               
-            }
-        });
-        num_0.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if(iseqsig){
-                    tf1s="";
-                    clear();
-                    iseqsig=false;
-                }
-                if(point_flag==0){
-                    Rua.num[mode_flag]=Rua.num[mode_flag]*10+0;
-                }else{
-                    if(Xcode++==1){
-                        zt=zt+".";
-                    }
-                    zt=zt+"0";
-                    Rua.num[mode_flag]=(double)Math.round(Rua.num[mode_flag]*Math.pow(10,Xcode-1))/Math.pow(10,Xcode-1);
-                }
-                s=Double.toString(Rua.num[mode_flag]);
-                if(s.indexOf(".") > 0){
-                    s = s.replaceAll("0+?$", "");
-                    s = s.replaceAll("[.]$", "");
-                }
-                s=s.concat(zt);
-                tf1.setText(tf1s+s);
-                  
-                 
-            }
-        });
-        num_point.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                point_flag=1;
-                tf1.setText(tf1.getText()+".");
-            }
-        });
-        plu.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if(iseqsig){
-                    tf1.setText(sm);
-                    iseqsig=false;
-                }
-                if(launch_sig==0) {cal_mode=1;launch_sig=1;}
-                c1.go(cal_mode);
-                tf1s =tf1.getText()+"+";
-                cal_mode_temp=cal_mode;
-                cal_mode=1;
-                Rua.num[mode_flag]=0;
-                if(++mode_flag>1) mode_flag=0;
-                sm=Double.toString(Rua.result_temp);
-                if(sm.indexOf(".") > 0){
-                    sm = sm.replaceAll("0+?$", "");
-                    sm = sm.replaceAll("[.]$", "");
-                }
-                tf1.setText(tf1.getText()+"+");
-                tf2.setText(sm);
-                point_flag=0;
-                Xcode=1;
-                zt="";
-            }
-        });
-        sub.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if(iseqsig){
-                    tf1.setText(sm);
-                    iseqsig=false;
-                }
-                if(launch_sig==0) {cal_mode=2;launch_sig=1;}
-                c1.go(cal_mode);
-                tf1s =tf1.getText()+"-";
-                cal_mode_temp=cal_mode;
-                cal_mode=2;
-                Rua.num[mode_flag]=0;
-                if(++mode_flag>1) mode_flag=0;
-
-                sm = Double.toString(Rua.result_temp);
-                if(sm.indexOf(".") > 0){
-                    sm = sm.replaceAll("0+?$", "");
-                    sm = sm.replaceAll("[.]$", "");
-                }
-                tf1.setText(tf1.getText()+"-");
-                tf2.setText(sm);
-                point_flag=0;
-                Xcode=1;
-                zt="";
-            }
-        });
-        mul.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if(iseqsig){
-                    tf1.setText(sm);
-                    iseqsig=false;
-                }
-                if(launch_sig==0) {cal_mode=3;launch_sig=1;}
-                c1.go(cal_mode);
-                tf1s =tf1.getText()+"×";
-                cal_mode_temp=cal_mode;
-                cal_mode=3;
-                Rua.num[mode_flag]=0;
-                if(++mode_flag>1) mode_flag=0;
-                c1.mode_t=mode_flag;
-                sm = Double.toString(Rua.result_temp);
-                if(sm.indexOf(".") > 0){
-                    sm = sm.replaceAll("0+?$", "");
-                    sm = sm.replaceAll("[.]$", "");
-                }
-                tf1.setText(tf1.getText()+"×");
-                tf2.setText(sm);
-                point_flag=0;
-                Xcode=1;
-                zt="";
-            }
-        });
-        dec.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if(iseqsig){
-                    tf1.setText(sm);
-                    iseqsig=false;
-                }
-                if(launch_sig==0) {cal_mode=4;launch_sig=1;}
-                c1.go(cal_mode);
-                tf1s =tf1.getText()+"÷";
-                cal_mode_temp=cal_mode;
-                cal_mode=4;
-                Rua.num[mode_flag]=0;
-                if(++mode_flag>1) mode_flag=0;
-                c1.mode_t=mode_flag;
-                sm = Double.toString(Rua.result_temp);
-                if(sm.indexOf(".") > 0){
-                    sm = sm.replaceAll("0+?$", "");
-                    sm = sm.replaceAll("[.]$", "");
-                }
-                tf1.setText(tf1.getText()+"÷");
-                tf2.setText(sm);
-                point_flag=0;
-                Xcode=1;
-                zt="";
-            }
-        });
-        cButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
+        num_1.addActionListener(e -> {
+            if(iseqsig){
                 tf1s="";
                 clear();
-                sm = Double.toString(Rua.result_temp);
-                if(sm.indexOf(".") > 0){
-                    sm = sm.replaceAll("0+?$", "");
-                    sm = sm.replaceAll("[.]$", "");
-                }
-                tf1.setText("0");
-                tf2.setText(sm);
             }
-        });
-        num_eq.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if(launch_sig==0) {cal_mode=0;launch_sig=1;}
-                c1.go(cal_mode);
-                tf1s =tf1.getText()+"=";
-                cal_mode=0;
-                Rua.num[mode_flag]=0;
-                if(++mode_flag>1) mode_flag=0;
-                c1.mode_t=mode_flag;
-                sm = Double.toString(Rua.result_temp);
-                if(sm.indexOf(".") > 0){
-                    sm = sm.replaceAll("0+?$", "");
-                    sm = sm.replaceAll("[.]$", "");
-                }
-                tf1.setText(tf1.getText()+"=");
-                tf2.setText(sm);
-                iseqsig=true;
-                zt="";
+            if(point_flag==0){
+                Rua.num[mode_flag]=Rua.num[mode_flag]*10+1;
+            }else{
+                Rua.num[mode_flag]=Rua.num[mode_flag]+1*Math.pow(0.1, Xcode++);
+                Rua.num[mode_flag]=(double)Math.round(Rua.num[mode_flag]*Math.pow(10,Xcode-1))/Math.pow(10,Xcode-1);
             }
+
+            s=Double.toString(Rua.num[mode_flag]);
+            if(s.indexOf(".") > 0){
+                s = s.replaceAll("0+?$", "");
+                s = s.replaceAll("[.]$", "");
+            }
+
+
+            tf1.setText(tf1s+s);
         });
-        tgButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if(point_flag==0){
+        num_2.addActionListener(e -> {
+            if(iseqsig){
+                tf1s="";
+                clear();
+                iseqsig=false;
+            }
+            if(point_flag==0){
+                Rua.num[mode_flag]=Rua.num[mode_flag]*10+2;
+            }else{
+                Rua.num[mode_flag]=Rua.num[mode_flag]+2*Math.pow(0.1, Xcode++);
+                Rua.num[mode_flag]=(double)Math.round(Rua.num[mode_flag]*Math.pow(10,Xcode-1))/Math.pow(10,Xcode-1);
+            }
+            s=Double.toString(Rua.num[mode_flag]);
+            if(s.indexOf(".") > 0){
+                s = s.replaceAll("0+?$", "");
+                s = s.replaceAll("[.]$", "");
+            }
+            tf1.setText(tf1s+s);
+        });
+        num_3.addActionListener(e -> {
+            if(iseqsig){
+                tf1s="";
+                clear();
+                iseqsig=false;
+            }
+            if(point_flag==0){
+                Rua.num[mode_flag]=Rua.num[mode_flag]*10+3;
+            }else{
+                Rua.num[mode_flag]=Rua.num[mode_flag]+3*Math.pow(0.1, Xcode++);
+                Rua.num[mode_flag]=(double)Math.round(Rua.num[mode_flag]*Math.pow(10,Xcode-1))/Math.pow(10,Xcode-1);
+            }
+            s=Double.toString(Rua.num[mode_flag]);
+            if(s.indexOf(".") > 0){
+                s = s.replaceAll("0+?$", "");
+                s = s.replaceAll("[.]$", "");
+            }
+            tf1.setText(tf1s+s);
+        });
+        num_4.addActionListener(e -> {
+            if(iseqsig){
+                tf1s="";
+                clear();
+                iseqsig=false;
+            }
+            if(point_flag==0){
+                Rua.num[mode_flag]=Rua.num[mode_flag]*10+4;
+            }else{
+                Rua.num[mode_flag]=Rua.num[mode_flag]+4*Math.pow(0.1, Xcode++);
+                Rua.num[mode_flag]=(double)Math.round(Rua.num[mode_flag]*Math.pow(10,Xcode-1))/Math.pow(10,Xcode-1);
+            }
+            s=Double.toString(Rua.num[mode_flag]);
+            if(s.indexOf(".") > 0){
+                s = s.replaceAll("0+?$", "");
+                s = s.replaceAll("[.]$", "");
+            }
+            tf1.setText(tf1s+s);
+        });
+        num_5.addActionListener(e -> {
+            if(iseqsig){
+                tf1s="";
+                clear();
+                iseqsig=false;
+            }
+            if(point_flag==0){
+                Rua.num[mode_flag]=Rua.num[mode_flag]*10+5;
+            }else{
+                Rua.num[mode_flag]=Rua.num[mode_flag]+5*Math.pow(0.1, Xcode++);
+                Rua.num[mode_flag]=(double)Math.round(Rua.num[mode_flag]*Math.pow(10,Xcode-1))/Math.pow(10,Xcode-1);
+            }
+            s=Double.toString(Rua.num[mode_flag]);
+            if(s.indexOf(".") > 0){
+                s = s.replaceAll("0+?$", "");
+                s = s.replaceAll("[.]$", "");
+            }
+            tf1.setText(tf1s+s);
+        });
+        num_6.addActionListener(e -> {
+            if(iseqsig){
+                tf1s="";
+                clear();
+                iseqsig=false;
+            }
+            if(point_flag==0){
+                Rua.num[mode_flag]=Rua.num[mode_flag]*10+6;
+            }else{
+                Rua.num[mode_flag]=Rua.num[mode_flag]+6*Math.pow(0.1, Xcode++);
+                Rua.num[mode_flag]=(double)Math.round(Rua.num[mode_flag]*Math.pow(10,Xcode-1))/Math.pow(10,Xcode-1);
+            }
+            s=Double.toString(Rua.num[mode_flag]);
+            if(s.indexOf(".") > 0){
+                s = s.replaceAll("0+?$", "");
+                s = s.replaceAll("[.]$", "");
+            }
+            tf1.setText(tf1s+s);
+        });
+        num_7.addActionListener(e -> {
+            if(iseqsig){
+                tf1s="";
+                clear();
+                iseqsig=false;
+            }
+            if(point_flag==0){
+                Rua.num[mode_flag]=Rua.num[mode_flag]*10+7;
+            }else{
+                Rua.num[mode_flag]=Rua.num[mode_flag]+7*Math.pow(0.1, Xcode++);
+                Rua.num[mode_flag]=(double)Math.round(Rua.num[mode_flag]*Math.pow(10,Xcode-1))/Math.pow(10,Xcode-1);
+            }
+            s=Double.toString(Rua.num[mode_flag]);
+            if(s.indexOf(".") > 0){
+                s = s.replaceAll("0+?$", "");
+                s = s.replaceAll("[.]$", "");
+            }
+            tf1.setText(tf1s+s);
+        });
+        num_8.addActionListener(e -> {
+            if(iseqsig){
+                tf1s="";
+                clear();
+                iseqsig=false;
+            }
+            if(point_flag==0){
+                Rua.num[mode_flag]=Rua.num[mode_flag]*10+8;
+            }else{
+                Rua.num[mode_flag]=Rua.num[mode_flag]+8*Math.pow(0.1, Xcode++);
+                Rua.num[mode_flag]=(double)Math.round(Rua.num[mode_flag]*Math.pow(10,Xcode-1))/Math.pow(10,Xcode-1);
+            }
+            s=Double.toString(Rua.num[mode_flag]);
+            if(s.indexOf(".") > 0){
+                s = s.replaceAll("0+?$", "");
+                s = s.replaceAll("[.]$", "");
+            }
+            tf1.setText(tf1s+s);
+
+        });
+        num_9.addActionListener(e -> {
+            if(iseqsig){
+                tf1s="";
+                clear();
+                iseqsig=false;
+            }
+            if(point_flag==0){
+                Rua.num[mode_flag]=Rua.num[mode_flag]*10+9;
+            }else{
+                Rua.num[mode_flag]=Rua.num[mode_flag]+9*Math.pow(0.1, Xcode++);
+                Rua.num[mode_flag]=(double)Math.round(Rua.num[mode_flag]*Math.pow(10,Xcode-1))/Math.pow(10,Xcode-1);
+            }
+            s=Double.toString(Rua.num[mode_flag]);
+            if(s.indexOf(".") > 0){
+                s = s.replaceAll("0+?$", "");
+                s = s.replaceAll("[.]$", "");
+            }
+            tf1.setText(tf1s+s);
+
+        });
+        num_0.addActionListener(e -> {
+            if(iseqsig){
+                tf1s="";
+                clear();
+                iseqsig=false;
+            }
+            if(point_flag==0){
+                Rua.num[mode_flag]=Rua.num[mode_flag]*10+0;
+            }else{
+                if(Xcode++==1){
+                    zt=zt+".";
+                }
+                zt=zt+"0";
+                Rua.num[mode_flag]=(double)Math.round(Rua.num[mode_flag]*Math.pow(10,Xcode-1))/Math.pow(10,Xcode-1);
+            }
+            s=Double.toString(Rua.num[mode_flag]);
+            if(s.indexOf(".") > 0){
+                s = s.replaceAll("0+?$", "");
+                s = s.replaceAll("[.]$", "");
+            }
+            s=s.concat(zt);
+            tf1.setText(tf1s+s);
+
+
+        });
+        num_point.addActionListener(e -> {
+            point_flag=1;
+            tf1.setText(tf1.getText()+".");
+        });
+        plu.addActionListener(e -> {
+            if(iseqsig){
+                tf1.setText(sm);
+                iseqsig=false;
+            }
+            if(launch_sig==0) {cal_mode=1;launch_sig=1;}
+            c1.go(cal_mode);
+            tf1s =tf1.getText()+"+";
+            cal_mode_temp=cal_mode;
+            cal_mode=1;
+            Rua.num[mode_flag]=0;
+            if(++mode_flag>1) mode_flag=0;
+            sm=Double.toString(Rua.result_temp);
+            if(sm.indexOf(".") > 0){
+                sm = sm.replaceAll("0+?$", "");
+                sm = sm.replaceAll("[.]$", "");
+            }
+            tf1.setText(tf1.getText()+"+");
+            tf2.setText(sm);
+            point_flag=0;
+            Xcode=1;
+            zt="";
+        });
+        sub.addActionListener(e -> {
+            if(iseqsig){
+                tf1.setText(sm);
+                iseqsig=false;
+            }
+            if(launch_sig==0) {cal_mode=2;launch_sig=1;}
+            c1.go(cal_mode);
+            tf1s =tf1.getText()+"-";
+            cal_mode_temp=cal_mode;
+            cal_mode=2;
+            Rua.num[mode_flag]=0;
+            if(++mode_flag>1) mode_flag=0;
+
+            sm = Double.toString(Rua.result_temp);
+            if(sm.indexOf(".") > 0){
+                sm = sm.replaceAll("0+?$", "");
+                sm = sm.replaceAll("[.]$", "");
+            }
+            tf1.setText(tf1.getText()+"-");
+            tf2.setText(sm);
+            point_flag=0;
+            Xcode=1;
+            zt="";
+        });
+        mul.addActionListener(e -> {
+            if(iseqsig){
+                tf1.setText(sm);
+                iseqsig=false;
+            }
+            if(launch_sig==0) {cal_mode=3;launch_sig=1;}
+            c1.go(cal_mode);
+            tf1s =tf1.getText()+"×";
+            cal_mode_temp=cal_mode;
+            cal_mode=3;
+            Rua.num[mode_flag]=0;
+            if(++mode_flag>1) mode_flag=0;
+            c1.mode_t=mode_flag;
+            sm = Double.toString(Rua.result_temp);
+            if(sm.indexOf(".") > 0){
+                sm = sm.replaceAll("0+?$", "");
+                sm = sm.replaceAll("[.]$", "");
+            }
+            tf1.setText(tf1.getText()+"×");
+            tf2.setText(sm);
+            point_flag=0;
+            Xcode=1;
+            zt="";
+        });
+        dec.addActionListener(e -> {
+            if(iseqsig){
+                tf1.setText(sm);
+                iseqsig=false;
+            }
+            if(launch_sig==0) {cal_mode=4;launch_sig=1;}
+            c1.go(cal_mode);
+            tf1s =tf1.getText()+"÷";
+            cal_mode_temp=cal_mode;
+            cal_mode=4;
+            Rua.num[mode_flag]=0;
+            if(++mode_flag>1) mode_flag=0;
+            c1.mode_t=mode_flag;
+            sm = Double.toString(Rua.result_temp);
+            if(sm.indexOf(".") > 0){
+                sm = sm.replaceAll("0+?$", "");
+                sm = sm.replaceAll("[.]$", "");
+            }
+            tf1.setText(tf1.getText()+"÷");
+            tf2.setText(sm);
+            point_flag=0;
+            Xcode=1;
+            zt="";
+        });
+        cButton.addActionListener(e -> {
+            tf1s="";
+            clear();
+            sm = Double.toString(Rua.result_temp);
+            if(sm.indexOf(".") > 0){
+                sm = sm.replaceAll("0+?$", "");
+                sm = sm.replaceAll("[.]$", "");
+            }
+            tf1.setText("0");
+            tf2.setText(sm);
+        });
+        num_eq.addActionListener(e -> {
+            if(launch_sig==0) {cal_mode=0;launch_sig=1;}
+            c1.go(cal_mode);
+            tf1s =tf1.getText()+"=";
+            cal_mode=0;
+            Rua.num[mode_flag]=0;
+            if(++mode_flag>1) mode_flag=0;
+            c1.mode_t=mode_flag;
+            sm = Double.toString(Rua.result_temp);
+            if(sm.indexOf(".") > 0){
+                sm = sm.replaceAll("0+?$", "");
+                sm = sm.replaceAll("[.]$", "");
+            }
+            tf1.setText(tf1.getText()+"=");
+            tf2.setText(sm);
+            iseqsig=true;
+            zt="";
+        });
+        tgButton.addActionListener(e -> {
+            if(point_flag==0){
+                Rua.num[mode_flag]= (Rua.num[mode_flag]-Rua.num[mode_flag]%10)/10;
+            }else{
+                if(Rua.num[mode_flag]%1==0) {
+                    point_flag = 0;
                     Rua.num[mode_flag]= (Rua.num[mode_flag]-Rua.num[mode_flag]%10)/10;
-                }else{
-                    if(Rua.num[mode_flag]%1==0) {
-                        point_flag = 0;
-                        Rua.num[mode_flag]= (Rua.num[mode_flag]-Rua.num[mode_flag]%10)/10;
-                    }else {
-                        //暂时不会
-                    }
+                }else {
+                    //暂时不会
                 }
-                if(Rua.num[mode_flag]==0){
-                    cal_mode=cal_mode_temp;
-                }
-                s=Double.toString(Rua.num[mode_flag]);
-                if(s.indexOf(".") > 0){
-                    s = s.replaceAll("0+?$", "");
-                    s = s.replaceAll("[.]$", "");
-                }
-                tf1.setText(tf1s+s);
             }
+            if(Rua.num[mode_flag]==0){
+                cal_mode=cal_mode_temp;
+            }
+            s=Double.toString(Rua.num[mode_flag]);
+            if(s.indexOf(".") > 0){
+                s = s.replaceAll("0+?$", "");
+                s = s.replaceAll("[.]$", "");
+            }
+            tf1.setText(tf1s+s);
         });
     }
     private void clear(){
