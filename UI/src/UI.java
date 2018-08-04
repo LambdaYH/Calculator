@@ -440,6 +440,58 @@ public class UI {
             Rua.num[mode_flag]=Math.log(Rua.num[mode_flag]);
             tf1.setText(tf1s + s);
         });
+        sinButton.addActionListener(e -> {
+            String s_temp = Double.toString(Rua.num[mode_flag]);
+            if (s_temp.indexOf(".") > 0) {
+                s_temp = s_temp.replaceAll("0+?$", "");
+                s_temp = s_temp.replaceAll("[.]$", "");
+            }
+            s = "sin("+s_temp+")";
+            Rua.num[mode_flag]=Math.sin(Rua.num[mode_flag]);
+            tf1.setText(tf1s + s);
+        });
+        cosButton.addActionListener(e -> {
+            String s_temp = Double.toString(Rua.num[mode_flag]);
+            if (s_temp.indexOf(".") > 0) {
+                s_temp = s_temp.replaceAll("0+?$", "");
+                s_temp = s_temp.replaceAll("[.]$", "");
+            }
+            s = "cos("+s_temp+")";
+            Rua.num[mode_flag]=Math.cos(Rua.num[mode_flag]);
+            tf1.setText(tf1s + s);
+        });
+
+        tanButton.addActionListener(e -> {
+            String s_temp = Double.toString(Rua.num[mode_flag]);
+            if (s_temp.indexOf(".") > 0) {
+                s_temp = s_temp.replaceAll("0+?$", "");
+                s_temp = s_temp.replaceAll("[.]$", "");
+            }
+            s = "tan("+s_temp+")";
+            Rua.num[mode_flag]=Math.tan(Rua.num[mode_flag]);
+            tf1.setText(tf1s + s);
+        });
+        eButton.addActionListener(e->{
+            if (++mode_flag > 1) mode_flag = 0;
+            Rua.num[mode_flag]=Math.E;
+            tf1.setText(tf1s + "e");
+        });
+
+        PButton.addActionListener(e->{
+            if (++mode_flag > 1) mode_flag = 0;
+            Rua.num[mode_flag]=Math.PI;
+            tf1.setText(tf1s + "π");
+        });
+        button_bfz.addActionListener(e->{
+            String s_temp = Double.toString(Rua.num[mode_flag]);
+            if (s_temp.indexOf(".") > 0) {
+                s_temp = s_temp.replaceAll("0+?$", "");
+                s_temp = s_temp.replaceAll("[.]$", "");
+            }
+            s =s_temp+"%";
+            Rua.num[mode_flag]=Rua.num[mode_flag]*0.01;
+            tf1.setText(tf1s + s);
+        });
     }
     private void clear(){
         cal_mode=0;
@@ -451,6 +503,7 @@ public class UI {
         Xcode=1;
         iseqsig=false;
         zt="";
+        c1.clear();
     }
     private void antis(){
         if (s.indexOf(".") > 0) {
